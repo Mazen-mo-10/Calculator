@@ -30,6 +30,7 @@ const resetButton = () => {
   storedValue = "";
   operator = "";
   updateResult(currentValue);
+  document.querySelector('[data-value="c"]').blur(); // commit solve problem reset 
 };
 const deleteButton = () => {
   if (!currentValue || currentValue === "0") return;
